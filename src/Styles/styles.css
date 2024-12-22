@@ -1,0 +1,55 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+  border-radius: 12px;
+  max-width: 400px !important;
+}
+
+.loginAnimation h1 {
+  transition: all 400ms ease-in-out;
+}
+
+.loginAnimation:hover h1 {
+  transform: translateY(-6.875rem);
+  font-size: 42px;
+  font-weight: 500;
+  color: #253237;
+  letter-spacing: 10px;
+}
+
+.loginAnimation:hover h1::after {
+  content: "...";
+}
+
+.sing-up-input-style {
+  @apply border border-gray-300 text-sm rounded-lg bg-gray-50 p-2.5;
+}
+
+.btn {
+  @apply hover:bg-primary border bg-blue-500 text-white hover:text-tertiary font-bold py-2 px-4 transition-all duration-300 rounded-xl;
+}
+
+.sliderElement {
+  @apply w-full flex items-center gap-4 ps-5 py-5 border-b-[1px] border-b-white border-opacity-30 sm:text-lg hover:text-tertiary cursor-pointer hover:bg-gray-700;
+}
+
+.discount-ratio {
+  @apply absolute top-2 left-2 bg-darkRed font-semibold text-white px-2 py-1 rounded-md text-sm;
+}
+
+.discount-value {
+  @apply absolute top-10 left-2 bg-secondary font-semibold text-white px-2 py-1 rounded-md text-xs line-through;
+}
+
+.btn-2 {
+  @apply px-4 py-2 font-semibold bg-[#c2dfe3] w-[fit-content] rounded-lg text-primary hover:bg-primary hover:text-tertiary transition duration-300 ease-in-out flex items-center;
+}
