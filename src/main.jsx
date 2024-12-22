@@ -24,19 +24,9 @@ import SingleProductPage from "@/Pages/SingleProductPage.jsx";
 import Search from "@/Pages/Search.jsx";
 import SingleDoctor from "@/Pages/SingleDoctor.jsx";
 import SingleOfferPage from "./Pages/SingleOfferPage.jsx";
-import DoctorDashboard from "./Pages/DoctorDashboard.jsx";
-import Workspaces from "./Components/DoctorDashboard/Workspaces.jsx";
-import Appointments from "./Components/DoctorDashboard/Appointments.jsx";
-import Stats from "./Components/DoctorDashboard/stats.jsx";
-import Availibilities from "./Components/DoctorDashboard/Availibilities.jsx";
-import DocOffers from "./Components/DoctorDashboard/Offers.jsx";
-import AddUpdateOffer from "./Components/DoctorDashboard/AddUpdateOffer.jsx";
-import UpdateMyInfo from "./Components/DoctorDashboard/UpdateMyInfo.jsx";
 import PatientAppointments from "./Pages/PatientAppointments.jsx";
 import ResetPassword from "./Pages/ResetPassword.jsx";
-import ChangePassword from "./Components/DoctorDashboard/ChangePassword.jsx";
 import { Rlogout } from "./Pages/RtoLogout.jsx";
-import AnswerQuestions from "./Components/DoctorDashboard/AnswerQuestions.jsx";
 
 const router = createBrowserRouter([
   {
@@ -114,48 +104,6 @@ const router = createBrowserRouter([
       {
         path: "offers/:offerid/",
         element: <SingleOfferPage />,
-      },
-      {
-        path: "doctor/:doctorid/",
-        element: <DoctorDashboard />,
-        children: [
-          {
-            path: "",
-            element: <Stats />,
-          },
-          {
-            path: "Workspaces/",
-            element: <Workspaces />,
-          },
-          {
-            path: "Appointments/",
-            element: <Appointments />,
-          },
-          {
-            path: "Availibilities/",
-            element: <Availibilities />,
-          },
-          {
-            path: "Offers/",
-            element: <DocOffers />,
-          },
-          {
-            path: "Add-UpdateOffers/",
-            element: <AddUpdateOffer />,
-          },
-          {
-            path: "UpdateMe/",
-            element: <UpdateMyInfo />,
-          },
-          {
-            path: "changePassword/",
-            element: <ChangePassword />,
-          },
-          {
-            path: "answerQuestions/",
-            element: <AnswerQuestions />,
-          },
-        ],
       },
       {
         path: "patient/myappointments",

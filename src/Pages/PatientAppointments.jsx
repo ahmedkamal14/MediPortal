@@ -14,7 +14,6 @@ import {
   CloseOutlined,
   TimerOutlined,
 } from "@mui/icons-material";
-import { tokens } from "../Components/DoctorDashboard/theme";
 import { useTheme } from "@emotion/react";
 
 import { toast } from "react-toastify";
