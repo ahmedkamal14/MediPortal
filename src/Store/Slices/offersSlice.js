@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { getAllOffers } from "@/API/OffersApi";
+import { getAllOffers } from "@/API/OffersApi.js";
 import {
   addOffer,
   getDoctorOffer,
